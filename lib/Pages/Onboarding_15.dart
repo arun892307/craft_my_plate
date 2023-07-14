@@ -22,7 +22,6 @@ class _Onboarding_15State extends State<Onboarding_15> {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(255,255,255, 1),
       body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -109,7 +108,9 @@ class _Onboarding_15State extends State<Onboarding_15> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 20,left: 15,right: 10),
+              padding:  EdgeInsets.only(
+                  top:MediaQuery.of(context).size.height*0.04 ,
+                  left: 15,right: 10),
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height*0.07,
@@ -138,7 +139,7 @@ class _Onboarding_15State extends State<Onboarding_15> {
                         showDialog(context: context, builder: (context){
                           return AlertDialog(
                             title: const Text("Error"),
-                            content: Text(e.toString().replaceRange(0, 38,""),
+                            content: Text(e.toString(),
                                 style: GoogleFonts.lexend(
                                     color: const Color.fromRGBO(1, 1, 1,1),
                                     fontWeight: FontWeight.w400,
@@ -175,7 +176,7 @@ class _Onboarding_15State extends State<Onboarding_15> {
                 ),),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height*0.28,
+              height: MediaQuery.of(context).size.height*0.23,
             ),
             Center(
               child: Text("By continuing, you agree to our\nTerms of Service  PrivacyPolicy", style:GoogleFonts.lexend(

@@ -152,7 +152,7 @@ class _Walkthrough_11State extends State<Walkthrough_11> {
                       ),
                     ),
                   ),
-                  Text("Create Your Own Plate",
+                  Text("Exquisite Catering",
                     style: GoogleFonts.lexend(
                       color: Colors.black,
                       fontSize: 26,
@@ -162,7 +162,7 @@ class _Walkthrough_11State extends State<Walkthrough_11> {
                   SizedBox(
                     height: size.height*0.02,
                   ),
-                  Text("Create unforgettable memories with our unique feature to curate your favorite cuisines and food, tailored to your special occasion.",
+                  Text("Experience culinary artistry like never\n before with our innovative and exquisite \ncuisine creations",
                     textAlign:TextAlign.center,
                     style: GoogleFonts.lexend(
                         color: Color.fromRGBO(123, 123, 123, 1),
@@ -247,7 +247,7 @@ class _Walkthrough_11State extends State<Walkthrough_11> {
                       ),
                     ),
                   ),
-                  Text("Create Your Own Plate",
+                  Text("Personal Order Executive",
                     style: GoogleFonts.lexend(
                       color: Colors.black,
                       fontSize: 26,
@@ -257,7 +257,7 @@ class _Walkthrough_11State extends State<Walkthrough_11> {
                   SizedBox(
                     height: size.height*0.02,
                   ),
-                  Text("Create unforgettable memories with our unique feature to curate your favorite cuisines and food, tailored to your special occasion.",
+                  Text("Embark on a personalized culinary journey\n with our dedicated one-to-one customer\n support, ensuring a seamless and \nsatisfying experience every step on the way.",
                     textAlign:TextAlign.center,
                     style: GoogleFonts.lexend(
                         color: Color.fromRGBO(123, 123, 123, 1),

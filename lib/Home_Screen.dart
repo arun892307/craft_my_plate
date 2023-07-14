@@ -14,11 +14,12 @@ class home_screen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         //forceMaterialTransparency: true,
         backgroundColor: Colors.white,
         foregroundColor: Colors.white,
         elevation: 0,
-        centerTitle: false,
+        //centerTitle: false,
         title: AutoSizeText(
           "Hi, Monica!",
           style: GoogleFonts.lexend(
@@ -29,8 +30,9 @@ class home_screen extends StatelessWidget {
         actions: <Widget>[
           IconButton(onPressed: ()async{
             await FirebaseAuth.instance.signOut();
+
           },
-              icon: Icon(Icons.logout,size: 25,color:Colors.black),alignment: Alignment.centerLeft,)
+              icon: const Icon(Icons.logout,size: 25,color:Colors.black),alignment: Alignment.centerLeft,)
         ],
       ),
       body: Stack(

@@ -173,7 +173,7 @@ class _onboarding_11State extends State<onboarding_11> {
                       showDialog(context: context, builder: (context){
                         return AlertDialog(
                           title: const Text("Error:"),
-                          content: Text(error.toString().replaceRange(0, 42,"")),
+                          content: Text(error.toString()),
                           backgroundColor: Colors.white70,
                         );
                       });

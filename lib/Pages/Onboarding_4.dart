@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:craft_my_plate/Home_Screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
@@ -138,8 +139,11 @@ class _Onboarding_4State extends State<Onboarding_4> {
                   style: ElevatedButton.styleFrom(
                       primary: const Color.fromRGBO(99, 24, 175,1)
                   ),
-                  onPressed: () {
-
+                  onPressed: ()async {
+                    await FirebaseFirestore.instance.collection("users").add({
+                      "Full Name":_full_name.text,
+                      "Email Id":_email.text
+                    });
                     Navigator.push(context, MaterialPageRoute(builder: (context) => home_screen(),));
                   },
 
